@@ -22,12 +22,10 @@ class NewArticle extends Component {
       abstract: '',
       options: keywordOptions,
     };
-    this.onChange = this.onChange.bind(this);
-    this.onEditorStateChange = this.onEditorStateChange.bind(this);
   }
 
-  onChange(e) {
-    this.setState({ [e.target.name]: e.target.value.toLowerCase() });
+  onChange = ({ target }) => {
+    this.setState({ [target.name]: target.value.toLowerCase() });
   }
 
   onEditorStateChange = editorState => {
