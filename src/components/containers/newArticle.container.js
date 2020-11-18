@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import NewArticle from '../presentations/NewArticle/NewArticle';
+import NewArticle from '../presentations/NewArticle';
 import { postArticle } from '../../actions/article.actions';
 
 const mapStateToProps = ({ articles }) => ({
